@@ -1,5 +1,5 @@
 CC:=cc
-CFLAGS:=-Wall -pedantic -g
+CFLAGS:=-Wall -pedantic -Wextra -Werror -g
 SRC:=$(wildcard *.c)
 OBJ:=
 

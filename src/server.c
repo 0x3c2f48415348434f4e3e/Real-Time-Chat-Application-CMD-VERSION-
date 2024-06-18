@@ -1,5 +1,8 @@
 #include"common.h"
 
+//to keep track of clients, we will be implementing a linked list.
+//Reason for this is cause the UNIX socket API sort of direct this
+//methodology
 
 void createServer(){
 	//follow documentation
@@ -46,8 +49,17 @@ void createServer(){
 			EXIT(1==1);
 		}
 	}
+
+	//listen  for client request
+	
 }
 
 void receiveMessage(){
 	//Receive message
+}
+
+void handleClient(){
+	//will handle client. So when a user sends a request, we will
+	//accept the connection, add the user to the linked list and then
+	//send them a message
 }
